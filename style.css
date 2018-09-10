@@ -1,0 +1,556 @@
+body {
+  background-color: white;
+  overflow:scroll;
+-webkit-overflow-scrolling:touch; 
+}
+main, footer{
+  margin: auto;
+  width: 100vw; 
+  font-family: Roboto, sans-serif; 
+  background-color: white;
+}
+
+a {
+  text-decoration: none; 
+}
+
+nav {
+  top: 0px; 
+  width: 100%;  
+  position: fixed;
+  background-color: white; 
+  background-opacity: 0.6;
+  z-index: 100;
+}
+#nav a {
+  color: grey; 
+  transition: 0.1s;
+}
+
+#nav a:hover {
+  color: black;   
+}
+
+.container { 
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; 
+  display: grid;  
+  grid-template-columns: 0fr 1fr 2fr; 
+  font-size: 0.8em; 
+  justify-content: space-between;  
+  align-items: center; 
+}
+#navbar a {
+  margin: 1vw; 
+}
+#name a{
+  color: #a1482f;
+  font-weight: 700; 
+  font-size: 0.9em; 
+}
+#nav {
+  font-family: Playfair Display; 
+  color: #938686;
+  text-align: right; 
+  padding-right: 2vw;
+  
+}
+
+#welcome-section {
+  margin: auto; 
+  height: 100vh; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: #2b719e;
+  font-family: Playfair Display, serif; 
+  font-weight: 400; 
+  text-align: center; 
+}
+
+#welcome-section h1 {
+  font-weight: 400; 
+}
+#h1-bigger {
+  font-size: 1.4em;  
+}
+
+#title-proj {
+  position: absolute;
+  margin-top: -0.8em;  
+  z-index: 3; 
+  color: #2d7768; 
+  font-weight: 400; 
+  font-size: 2em; 
+  right: 4vw;  
+}
+
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "one two"
+    "three four" 
+    "five five"
+    "six seven"
+    "six eight"
+}
+#projects div {
+  height: 50vw; 
+}
+
+#projects .five {
+  height: 30vw;
+}
+
+.img-container{
+  overflow: hidden;
+}
+
+.img-container:hover .project-ti,
+.img-container:focus .project-ti {
+  transform: scale(1.1);   
+}
+
+.one {
+  grid-area: one; 
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three; 
+}
+
+.four {
+  grid-area: four;
+ 
+}
+
+.five {
+  grid-area: five;
+  background-color: white; 
+  
+}
+
+.six {
+  grid-area: six;
+  background-color: #cbd8e0;
+  color: #2d7768; 
+  font-weight: 700; 
+  z-index: 3; 
+  height: 100vw; 
+   
+}
+
+.seven {
+  grid-area: seven;
+  background-color: #f29670;
+}
+
+.eight {
+  grid-area: eight;
+  background-color: #edbcaa;
+  background-image: url("https://lh3.googleusercontent.com/f7kd-ISYCKe47JCqovrIerADDAlMo4OSUPQeYXBZXqppfELDbTUi722Pmd9IFNF89hhWwuuoKA1Uz2zgT-PuSFWtAuPp3cvjwvl8DIwrF8vgez9LVxbErg2PD-P4FtWC4iaMJC3Lk5cqg5561FECMwcZ0OqqbdvYP8PPxtvAevqH5UKh80q70QvG-RSo4SMMBWEICIGS3Bj2RHtcbpnKZxvukhScgBto5mezHYA9ZFIYmZmKZEki6-Btc1TlzZ1PL8BuPTG01ENuNwcfGgFB9ldRHkpplJyn6tQd0Rr57GCLgA5JmCoy1pHpkACR2JqeZQZpRwAqhEXYrY2I3k6srnbq5vbqrIkplUiHIpsG40atqe7UJdZohFdC3EpGLfuxZWFYMeDGXD6Dw7FCNFLKlcdaR-2s0get7_zgGU27YZTWBXPeJD16rQHthZB4yBQBsKgMn93E-uNVgyO9njWHR9w2Mp2FRQgYhD7sys4ad94JNM65DEU6eT5yvNUgj5-rWEz8M_T49lcDASz978WDNYA2kHqDL9AyFyTeBSgrOVZXMLsgOkr_5HO1NvtcpYG8TGkHPlDTlWhiehe1Xgd4y1ShyUVnQ2smSojF2ht8=s1379-no");
+  background-position: center;
+  background-size: cover; 
+}
+
+
+.five h3 {
+ text-align: center; 
+  font-family: Roboto Mono, monospace;
+  font-weight: 400; 
+  color: #45875b; 
+  font-size: 0.7em; 
+  line-height: 20vw;
+  vertical-align: middle; 
+}
+
+.know {
+  margin: 3vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "frst frst"
+    "scnd scnd"
+    ". thrd";
+ 
+}
+#projects .six {
+  height: 100vw; 
+}
+
+.six article {
+}
+.six article h4{
+  font-size: 1.1em; 
+  margin-top: 
+}
+
+.six article p {
+  font-size: 0.7em; 
+}
+
+.six-one {
+ grid-area: frst;
+}
+
+.six-two {
+  grid-area: scnd; 
+}
+
+.six-three {
+  grid-area: thrd;
+  color: #97ba6b; 
+  text-align: right;
+  position: relative;
+  margin-top: -40px;
+}
+.six h4 {
+  margin-bottom: 0px; 
+  line-height: 1.3; 
+}
+
+.six p {
+  margin: 2px;  
+  line-height: 1.4;  
+}
+
+
+
+#title-about {
+  position: absolute;
+  color: #edbcaa; 
+  font-size: 2em;
+  font-weight: 400;
+  text-align: right; 
+  margin-left: 1vw;  
+  margin-top: -29px; 
+
+}
+
+.project-ti {
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.project-title1 {
+  background-color: #eaeee8; 
+  background-image:  url("https://lh3.googleusercontent.com/Sm5ssyVTQl9LRmbAYv9MqewKrkIlnxhDOfHR7cAceX8hZ8XfbKnPgXDb_S25xMruDeCWkwL-I4YP0F5HahPnKlMFDV82qNuMRDa5AJbkzSptOp-CiZG7KCKpuzhDg8e7z8oEb9WoXtFpXpeUhTSQD44LS7-2IFMDceNZMkfvYq3tFgBBzsjP4lsWI0HlcSnb5_kyAxWePIVrlZtLz1UCLAonDsLDu6JdEfJSqnwjZEyavLo_gd5JaUIjK1oWlEycVKRaIPkRqUv0RPOR_iLlTK-ku3ms0wD7HnS-ZB8O8eI2rhqhLyrg2Z7cMcyFz1AgQS3qulDj9oup__GQ_4Sy3fFmFgGJnGvKQ7BpyKZP4nVxzhM_-un_ImrDhqIVsFWow7o9wUQEMtjMhabuYNz4K0Qwq0uy7AHyjy0t8YfGyOTGFtE3N9WQDSwbUOCGTZi_x3c88mpedI4fKFuGPhNSXIBnIVBg22baq8ZNUXe9aBKe_q25SxSqFV9p0aaXS_4VVFTA4F_V7NWDKiZnjIGZW4AAYjCg5tlrAMNjAYHlmfcAWfqHvXAbv-nXBSdw9D3oLWFn0nnoQUEljoDtMHZbNs6eALK0uYAmmjQNrv7T=w567-h434-no");
+
+}
+
+.project-title2 {
+  background-color: #fad4c5; 
+  background-image: url("https://lh3.googleusercontent.com/Vp8bklIMA_oUFMKy9yzfVNIY8P2EJYQcOlkl5kOruQdU7wXwdHZWNLXMzkogZFTgo8OvKYBV51EJJMsnGppZcJa8RvNDRjWzb8S3S1E6mIQyBGG5HbW77GPAcYQoYOO8H3rqICUi8FrfOGWo9PRsZ4rfnewe76jCKfv_Xao7b6NRh0Dhx4gg0fsPfG-gm2tTSDk9HMlLarN5aQAZnYpycBW467Pksg8m4jSvA1dLKo25NQO0AK6rdGrTEVtHUEl5RvJ3cMl97DMGTzLdTUHkWFogHLWTWy2F3ieWd4SDArNr16jqlUd_IIl8ldkSij61zPO1PAYnRKo34JrnHAVbVYz3yzf9eg7Mq_2jYXV2nXvsycCy3VCjFxSjFxuR4E2rOlDbZnGJG_DuVe-BY6j7Nw1uE_8sYf03tWxeSRRpHqSCVM0-ctymqnbiSMEXAHqKemor5U7ScMvtVKZ6GukNH2goxbHqz5cNd6iX4zb0kMxBzzkkxiyWrRv5ADHaOvlEEZC8t7cGj7QoyOgC7y6r70KPnChYwXeob4BRbq442tvzq_L2jdu1kn7k-dj5OGFwrYsJGpbNaIYJFDIkI9LySqRHFsQKMsTugfe5aXkH=w850-h616-no");  
+}
+
+.project-title3 {
+  background-color: #89bfc6; 
+}
+
+
+ .project-title4 {
+  background-color: #89bfc6;  
+  background-image: url("https://lh3.googleusercontent.com/doFngxFa7v2eXX23gAy5WAIwWD_PgnFW10WOeucGHXesMq17aqeJzvagCg4WF2ygIN268ET6PWcbbQQ-cYqO13eBoWEvUrcFa7yiQrRHEBROfQNPDTK_LagXSNPciQBzhE_c5X_PPlapSXkm87ASYE6m5MdbRnSJuPlYKWbFqdjIYFh2mAkdismKDMi1lR_Y3yj_jJ1HWSVB39FpeSMl3tFICewHhW60E__-feOfuBmXtGf2MUDObv3LT5vR_aiq1WzJHVjkcbbYPPXxpj7v-8GDLxzJduaGI5ZbhgDUJrpmui2gS1OLpQ-wVJZ_nEOE9ltTEl-2Ze-TRaj3-TuGpZ_OefYuRhk_IDFyANHltbXSrgaBjd6kqFc53-wvl2XWbdz9wvwnzwsKkjHlHuPBhG-Cxkld4oc8qVVH60w14-XH3FQrQJwqs3284oQCVI4sng5SOvW2OqaS2jog6TdzPCTsrIeQu7ZVMwFnooVXRQpUKQ3TBnHrhqs1c1Znx9mcg8WjrAWJJ46EDnQj3zTg6gCMHESPEcf2Bbh1FESF6I_8M0R6D0FtkbI5TW8jNQ_xLq5Qdi8x8A_Q4h6Vvlc60edJeQjh1MbOPHwwZFSG=w709-h472-no");
+}
+
+.three,  
+.codepen-link{ 
+  text-align: center; 
+  margin: 0px; 
+  vertical-align: middle;
+  line-height: 50vw; 
+  color: #2d7768;
+  text-decoration: none; 
+  font-size: 1em;  
+}
+
+.codepen-link:hover {
+  text-decoration: underline; 
+}
+
+
+
+
+.project-description {
+  text-shadow: 1px 1px 2em #eaeee8; 
+  margin: 0px; 
+  font-size: 0.8em;
+  font-weight: 700; 
+  color: #42362e;  
+} 
+
+
+.project-title1 p{
+  padding-left: 3vw; 
+  padding-top: 3vw;
+}
+
+.project-title2 p, .project-title4 p {
+  text-align: right;
+  padding-top: 34vw;
+  padding-right: 3vw; 
+
+}
+
+.bigger{ 
+   font-size: 1.3em;;
+ }
+@keyframes tick {
+  0% {opacity: 1;}
+  30% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.animate {
+  animation-name: tick;
+  animation-duration: 0.4s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.seven {
+  text-align: center; 
+}
+
+.fas{
+  line-height: 50vw;
+  vertical-align: middle; 
+  color: white;
+  text-align: center; 
+  margin: auto; 
+  font-size: 8em; 
+}
+
+
+#contact {
+  color: #4e6eab; 
+  margin: auto; 
+  margin-bottom: 40vh;
+  text-align: center; 
+  margin-top: 4em; 
+  
+}
+#contact h1 {
+  font-size: 2em;  
+}
+
+#contact a{
+  color: #4e6eab; 
+  font-size: 1.7em; 
+}
+
+footer {
+  background-color: #ebf0ef;  
+  padding: 7px; 
+  margin-top: -10px; 
+  color: #bcc4c0;
+  text-align: center;
+}
+
+
+
+/* TABLET MEDIA QUERY */
+@media only screen 
+  and (min-width: 480px) {
+  main {
+    width: 80vw; 
+  }
+    
+  nav {
+   width: 80vw;  
+  }
+    
+    
+  .container {
+    grid-template-columns: 40% 20% 40%;
+  }
+    
+    #name {
+      text-align: center; 
+    }  
+  
+    .codepen-link {
+       font-size: 1.4em;
+    }
+    #title-proj{
+      right: 12vw;
+      font-size: 3em; 
+    }
+    
+    #title-about {
+      font-size: 3em;
+        margin-left: 1vw;  
+  margin-top: -44px; 
+
+    }
+    #projects div {
+        height: 40vw;   
+     }
+    
+    #projects .six {
+        height: 80vw; 
+      }
+    
+
+    .six article p {
+      font-size: 1em;
+    }
+    .six article h4 {
+      font-size: 1.4em; 
+      margin-top: 0px; 
+    }
+        .project-description {
+      font-size: 1em;
+     } 
+    
+    .five h3 {
+      font-size: 1.2em; 
+    }
+     .three,  
+     .codepen-link{ 
+      line-height: 40vw;   
+      font-size: 1.2em; 
+}
+    
+    .project-title2 p, .project-title4 p {
+      padding-top: 30vw;   
+    }
+    
+    .bigger{ 
+       font-size: 1.4em;
+     }
+    
+    .fas {
+      line-height: 40vw;
+      font-size: 10em;
+    }
+}
+    
+
+    
+
+
+    
+
+
+
+
+
+
+
+/*DEKSTOP MEDIA QUERY */
+@media only screen and (min-width: 1200px){
+  main {
+    width: 65vw;  
+  }
+  nav {
+    width: 65vw; 
+  }
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  #title-proj{
+      right: 22vw;
+      font-size: 4em;  
+    }
+  
+    #projects div {
+  height: 32vw;   
+}
+  
+   #projects .six {
+        height: 64vw;  
+      }
+  
+  .six article h4 {
+      font-size: 2em; 
+      margin-top: 0px; 
+    } 
+  
+  .six article p {
+      font-size: 1em; 
+    } 
+  
+  #projects .five {
+    height:20vw;
+  }
+  
+  #title-about {
+      font-size: 4em; 
+    margin-top: -59px;
+    }
+  
+  .three,  
+  .codepen-link{ 
+     line-height: 32vw;   
+}
+
+  .five h3 {
+    font-size: 1.5em; 
+    line-height: 15vw; 
+  }
+  
+  .project-description {
+      font-size: 2em;
+     } 
+  
+  .project-title2 p, .project-title4 p {
+      padding-top: 20vw;    
+    }
+  
+  .codepen-link {
+       font-size: 2em;
+    }
+  
+    .fas {
+        line-height: 32vw;
+        font-size: 13em;
+      }
+  
+}
+
+
+
+
+
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	#welcome-section {
+		height: 768px;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	#welcome-section {
+		height: 1024px;
+	}
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+	#welcome-section {
+		height: 320px;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+	#welcome-section {
+		height: 568px;
+	}
+}
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	#welcome-section {
+		height: 320px;
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	#welcome-section {
+		height: 480px;
+	}
+}
